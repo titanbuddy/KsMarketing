@@ -856,6 +856,9 @@ swiper-slide img {
 }
 
 @media screen and (width <= 968px) {
+  .about-team-section .about-team .better {
+    flex-direction: column;
+  }
   .hero-section .hero .hero-slide .img-pvcs img {
     width: 80px;
   }

@@ -981,6 +981,13 @@ swiper-container {
 }
 
 @media screen and (width <= 968px){
+    .about-team-section {
+        .about-team {
+            .better {
+                flex-direction: column;
+            }
+        }
+    }
     .hero-section {
         .hero {
             .hero-slide {
