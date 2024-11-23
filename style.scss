@@ -155,6 +155,42 @@ nav {
         }
     }
 }
+@media screen and (width <= 786px) {
+    .hero-section {
+        .hero {
+            .mySwiper {
+                height: 400px;
+            }
+            .hero-slide {
+                width: 100vw;
+                height: 300px;
+                .img-pvcs {
+                    display: flex;
+                    flex-direction: column;
+                    img {
+                        width: 100vw !important;
+                        max-height: 600px;
+                        object-fit: cover;
+                    }
+                    .pvc2{
+                        width: 100%;
+                        height: 400px;
+                    }
+                    .pvc3 {
+                        display: none !important;
+                    }
+                    .pvc4 {
+                        display: none !important;
+                    }
+                    .pvc1 {
+                        display: none !important; 
+                    }
+                    
+                }
+            }
+        }
+    }
+}
 swiper-container {
     width: 100%;
     height: 40rem;
@@ -1067,26 +1103,40 @@ swiper-container {
     .know {
         flex-direction: column;
         .know-img {
-            width: 80%;
             height: 200px;
             img {
                 height: 100%;
             }
+    
+
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                   
+                img {
+                    object-fit: cover;
+                    width: 100%;
+                    height: 100%;
+                    
+                }
+               
+            
         }
     }
     nav {
         .links {
             position: fixed;
-            top: -100%;
-            left: 0;
-            width: 100vw;
+            top: 0%;
+            right: -100%;
+            min-width: 30vw;
             height: 100vh;
             z-index: 15;
-            background-color: $para_color;
+            background-color: #2e2d2d;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            transition: top .4s;
+            transition: right .4s;
             a {
                 color: #FAFAFA;
             }
@@ -1105,7 +1155,7 @@ swiper-container {
         }
     }
     .nav-active {
-        top: 0% !important;
+        right: 0% !important;
     }
     .service-section {
         .serve-swipe {
@@ -1130,3 +1180,30 @@ swiper-container {
     }
 }
  
+@media screen and (width <= 400px){
+    .trust-awards {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        .big1,.big2 {
+            display: flex;
+            flex-direction: column;
+            margin: 10px;
+            gap: 10px;
+        }
+        .award {
+            width: 100%;
+            min-height: 200px;
+            background: $para_color;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 5px 10px;
+            text-align: center;
+            
+        
+        }
+    }
+}

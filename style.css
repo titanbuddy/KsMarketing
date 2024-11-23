@@ -126,6 +126,38 @@ nav .burger {
     height: 500px;
   }
 }
+@media screen and (width <= 786px) {
+  .hero-section .hero .mySwiper {
+    height: 400px;
+  }
+  .hero-section .hero .hero-slide {
+    width: 100vw;
+    height: 300px;
+  }
+  .hero-section .hero .hero-slide .img-pvcs {
+    display: flex;
+    flex-direction: column;
+  }
+  .hero-section .hero .hero-slide .img-pvcs img {
+    width: 100vw !important;
+    max-height: 600px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .hero-section .hero .hero-slide .img-pvcs .pvc2 {
+    width: 100%;
+    height: 400px;
+  }
+  .hero-section .hero .hero-slide .img-pvcs .pvc3 {
+    display: none !important;
+  }
+  .hero-section .hero .hero-slide .img-pvcs .pvc4 {
+    display: none !important;
+  }
+  .hero-section .hero .hero-slide .img-pvcs .pvc1 {
+    display: none !important;
+  }
+}
 swiper-container {
   width: 100%;
   height: 40rem;
@@ -911,24 +943,33 @@ swiper-slide img {
     flex-direction: column;
   }
   .know .know-img {
-    width: 80%;
     height: 200px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   .know .know-img img {
     height: 100%;
   }
+  .know .know-img img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
   nav .links {
     position: fixed;
-    top: -100%;
-    left: 0;
-    width: 100vw;
+    top: 0%;
+    right: -100%;
+    min-width: 30vw;
     height: 100vh;
     z-index: 15;
-    background-color: #1D2532;
+    background-color: #2e2d2d;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    transition: top 0.4s;
+    transition: right 0.4s;
   }
   nav .links a {
     color: #FAFAFA;
@@ -946,7 +987,7 @@ swiper-slide img {
     color: #C3AD76;
   }
   .nav-active {
-    top: 0% !important;
+    right: 0% !important;
   }
   .service-section .serve-swipe {
     height: 520px;
@@ -959,6 +1000,31 @@ swiper-slide img {
   }
   .trust-section .trust .trust-text {
     align-items: center;
+    text-align: center;
+  }
+}
+@media screen and (width <= 400px) {
+  .trust-awards {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+  }
+  .trust-awards .big1, .trust-awards .big2 {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    gap: 10px;
+  }
+  .trust-awards .award {
+    width: 100%;
+    min-height: 200px;
+    background: #1D2532;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 10px;
     text-align: center;
   }
 }/*# sourceMappingURL=style.css.map */

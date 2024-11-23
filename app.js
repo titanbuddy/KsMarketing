@@ -6,5 +6,6 @@ societyLink.addEventListener('click', () => {
     linksDropdown.classList.toggle('dropdown-appear')
 });
 burger.addEventListener('click', ()=> {
-    navLink.classList.toggle('nav-active')
+    navLink.classList.toggle('nav-active');
+    
 });
