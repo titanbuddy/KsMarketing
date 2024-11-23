@@ -604,7 +604,7 @@ swiper-container {
             display: flex;
             flex-direction: column;
             align-items: center;
-            width: 380px;
+            max-width: 380px;
             margin: auto;
             margin-bottom: 3rem;
             min-height: 770px;
