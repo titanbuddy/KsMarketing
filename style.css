@@ -378,95 +378,30 @@ swiper-slide img {
   margin-bottom: 50px;
   color: #C3AD76;
 }
-.about-story-section .about-story div {
-  padding: 30px 15px;
-}
-.about-story-section .about-story div p {
-  font-size: 0.9rem;
-  color: #1D2532;
+.about-story-section .about-story {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
 }
 .about-story-section .about-story .left1 {
-  width: 50%;
-  position: relative;
+  flex: 1;
 }
-.about-story-section .about-story .left1:hover .timeline h1 {
-  opacity: 1;
-}
-.about-story-section .about-story .left1::after {
-  content: "";
-  position: absolute;
-  width: 2px;
-  height: 100%;
-  right: 0;
-  top: 0;
-  border-radius: 20px 20px 0 0;
-  background: #1D2532;
-}
-.about-story-section .about-story .left1::before {
-  content: "";
-  position: absolute;
-  width: 10px;
-  height: 10px;
-  right: -14px;
-  top: 35%;
-  transform: translate(-10px, 35%);
-  border-radius: 50%;
-  background: #1D2532;
+.about-story-section .about-story .left1 p {
+  font-size: 0.9rem;
+  color: #1D2532;
+  padding-top: 10px;
 }
 .about-story-section .about-story .left2 {
-  position: relative;
-  width: 50%;
-  margin-left: auto;
-  padding: 0 10px;
+  flex: 1;
 }
-.about-story-section .about-story .left2 .t2 {
-  left: -100%;
-}
-.about-story-section .about-story .left2:hover .timeline h1 {
-  opacity: 1;
-}
-.about-story-section .about-story .left2::after {
-  content: "";
-  position: absolute;
-  width: 2px;
-  height: 100%;
-  left: -2px;
-  top: 0;
-  background: #1D2532;
-}
-.about-story-section .about-story .left2::before {
-  content: "";
-  position: absolute;
-  width: 10px;
-  height: 10px;
-  left: 0px;
-  top: 35%;
-  transform: translate(-6px, 35%);
-  border-radius: 50%;
-  background: #1D2532;
+.about-story-section .about-story .left2 img {
+  width: 100%;
+  min-height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .about-story-section .consult-about {
-  margin-top: 50px;
-}
-
-.timeline {
-  position: absolute;
-  top: 10%;
-  left: 100%;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #C3AD76;
-}
-.timeline h1 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 2rem;
-  opacity: 0;
-  transition: 0.3s opacity cubic-bezier(0.165, 0.84, 0.44, 1);
+  margin-top: 1rem;
 }
 
 .partners-story-section {
@@ -887,6 +822,10 @@ swiper-slide img {
   justify-content: center;
 }
 
+.strong {
+  font-weight: 800;
+}
+
 @media screen and (width <= 968px) {
   .about-team-section .about-team .better {
     flex-direction: column;
@@ -927,14 +866,11 @@ swiper-slide img {
   .timeline {
     display: none;
   }
-  .about-story-section .about-story div {
-    width: 100% !important;
+  .about-story-section .about-story {
+    flex-direction: column;
   }
-  .about-story-section .about-story div::after {
-    display: none;
-  }
-  .about-story-section .about-story div::before {
-    display: none;
+  .about-story-section .about-story .left2 img {
+    min-height: 300px !important;
   }
   .trust-section .trust {
     flex-direction: column;

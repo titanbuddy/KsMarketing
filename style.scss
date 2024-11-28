@@ -444,106 +444,34 @@ swiper-container {
         color: $main_color;
     }
     .about-story {
-        div {
-            padding: 30px 15px;
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        .left1 {
+            flex: 1;
             p {
                 font-size: .9rem;
                 color: $para_color;
-            }
-        }
-        .left1 {
-            width: 50%;
-            position: relative;
-           
-            &:hover {
-                .timeline {
-                    h1 {
-                    opacity: 1;
-                    }
-                }
-            }
-            &::after {
-                content: '';
-                position: absolute;
-                width: 2px;
-                height: 100%;
-                right: 0;
-                top: 0;
-                border-radius: 20px 20px 0 0 ;
-                background: $para_color;
-            }
-            &::before {
-                content: '';
-                position: absolute;
-                width: 10px;
-                height: 10px;
-                right: -14px;
-                top: 35%;
-                transform: translate(-10px, 35%);
-                border-radius: 50%;
-                background: $para_color;
+                padding-top: 10px;
             }
         }
         .left2 {
-    .t2 {
-    left: -100%;
-    }
-    &:hover {
-     .timeline {
-          h1 {
-         opacity: 1;
-            }
-           }
-            }
-            position: relative;
-            width: 50%;
-            margin-left: auto;
-            padding: 0 10px;
-            &::after {
-                content: '';
-                position: absolute;
-                width: 2px;
-                height: 100%;
-                left: -2px;
-                top: 0;
-                background: $para_color;
-            }
-            &::before {
-                content: '';
-                position: absolute;
-                width: 10px;
-                height: 10px;
-                left: 0px;
-                top: 35%;
-                transform: translate(-6px, 35%);
-                border-radius: 50%;
-                background: $para_color;
-            }
+            flex: 1;
+            img {
+                width: 100%;
+                min-height: 400px;
+                object-fit: cover;
+               }
         }
+      
+        
        
     }
     .consult-about {
-        margin-top: 50px;
+        margin-top: 1rem;
     }
 }
-.timeline {
-    position: absolute;
-    top: 10%;
-    left: 100%;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: $main_color;
-    h1 {
-    display: flex;align-items: center;
-    justify-content: center;
-    gap: 2rem;
-    opacity: 0;
-    transition: .3s opacity cubic-bezier(0.165, 0.84, 0.44, 1);
-    }
-}
+
 .partners-story-section {
     margin: 120px auto;
     overflow-x: hidden;
@@ -1015,7 +943,9 @@ swiper-container {
     }
   
 }
-
+.strong {
+    font-weight: 800;
+}
 @media screen and (width <= 968px){
     .about-team-section {
         .about-team {
@@ -1083,16 +1013,13 @@ swiper-container {
     }
     .about-story-section {
         .about-story {
-            div {
-            width: 100% !important;
-                &::after {
-                    display: none;
+            flex-direction: column;
+            .left2 {
+                img {
+                    min-height: 300px !important;
                 }
-                &::before {
-                    display: none;
-                }
-              
             }
+           
         }
     }
     .trust-section {
